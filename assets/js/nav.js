@@ -10,7 +10,7 @@ menunavbar.addEventListener("click",(e)=>{
         resnavbar.style="margin-top:65px";
     }else{
         e.target.name="menu";
-        resnavbar.style="margin-top:-300px";
+        resnavbar.style="margin-top:-350px";
     }
 });
 mode.addEventListener("click",(e)=>{
@@ -29,7 +29,7 @@ document.addEventListener("scroll",(e)=>{
     e.preventDefault();
     console.log("Scrolled....");
     if(window.scrollY>10){
-     navbar.style="md:background-color:#00b243";
+     navbar.style="background-color:#00b243";
     }else{
         navbar.style="md:background-color:transparent";
     }
