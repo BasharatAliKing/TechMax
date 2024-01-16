@@ -2,6 +2,7 @@ const mode=document.getElementById("mode");
 const navbar=document.getElementById("navbar");
 const menunavbar=document.getElementById("menu-navbar");
 const resnavbar=document.getElementById("res-navbar");
+const mainscreen=document.getElementById("screen");
 menunavbar.addEventListener("click",(e)=>{
     e.preventDefault();
     console.log("clicked...")
@@ -15,13 +16,15 @@ menunavbar.addEventListener("click",(e)=>{
 });
 mode.addEventListener("click",(e)=>{
     e.preventDefault();
-    console.log(e.target.name);
+   // console.log(e.target.name);
     if(e.target.name=="sunny"){
         e.target.name="moon";
-        e.target.body.style="background-color:white";
+      //  e.target.body.style="background-color:white";
+        mainscreen.className="light";
     }
     else{
         e.target.name="sunny";
+        mainscreen.className="dark"
     }
 });
 
