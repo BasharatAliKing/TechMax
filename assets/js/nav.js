@@ -1,4 +1,5 @@
 const mode=document.getElementById("mode");
+const navbar=document.getElementById("navbar");
 mode.addEventListener("click",(e)=>{
     e.preventDefault();
     console.log(e.target.name);
@@ -10,3 +11,13 @@ mode.addEventListener("click",(e)=>{
         e.target.name="sunny";
     }
 });
+
+document.addEventListener("scroll",(e)=>{
+    e.preventDefault();
+    console.log("Scrolled....");
+    if(window.scrollY>10){
+     navbar.style="background-color:#00b243";
+    }else{
+        navbar.style="background-color:transparent";
+    }
+})
