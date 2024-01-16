@@ -1,5 +1,18 @@
 const mode=document.getElementById("mode");
 const navbar=document.getElementById("navbar");
+const menunavbar=document.getElementById("menu-navbar");
+const resnavbar=document.getElementById("res-navbar");
+menunavbar.addEventListener("click",(e)=>{
+    e.preventDefault();
+    console.log("clicked...")
+    if(e.target.name=="menu"){
+        e.target.name="close";
+        resnavbar.style="margin-top:65px";
+    }else{
+        e.target.name="menu";
+        resnavbar.style="margin-top:-210px";
+    }
+});
 mode.addEventListener("click",(e)=>{
     e.preventDefault();
     console.log(e.target.name);

@@ -19,7 +19,7 @@
 
 <body class="">
   <!--Navbar starts here-->
-  <nav id="navbar" class="bg-transparent py-3  fixed z-10 w-full">
+  <nav id="navbar" class="bg-transparent py-3  fixed z-20 w-full ">
     <div class="container flex items-center">
       <div><img src="/assets/images/logo-light.png" alt=""></div>
       <ul class="hidden md:flex gap-7 mx-auto ">
@@ -38,12 +38,30 @@
         <li class="flex gap-[2px] nav items-center text-base font-medium text-white cursor-pointer"><a
             href="#"></a>Contact</a></li>
       </ul>
-      <div class="ml-auto flex gap-5 text-xl">
+      <div class="ml-auto flex items-center gap-5 text-xl">
         <ion-icon id="search" class="text-white" name="search"></ion-icon>
         <ion-icon id="mode" class="text-white" name="sunny"></ion-icon>
+        <ion-icon name="menu" class="text-3xl text-white " id="menu-navbar" ></ion-icon>
       </div>
     </div>
   </nav>
+   <!--Responcive menu navbar-->
+   <ul id="res-navbar" class="fixed z-10 mt-[-210px] duration-500  w-full bg-green flex flex-col items-center py-5">
+    <li class="flex gap-[2px]  items-center text-base font-medium text-white cursor-pointer active"><a
+        href="#"></a>Home</a></li>
+    <li class="flex gap-[2px] nav items-center text-base font-medium text-white cursor-pointer"><a
+        href="#"></a>About</a></li>
+    <li class="flex gap-[2px] nav items-center text-base font-medium text-white cursor-pointer"><a
+        href="#"></a>Services</a></li>
+    <li class="flex gap-[2px] nav items-center text-base font-medium text-white cursor-pointer"><a
+        href="#"></a>Portfolio</a></li>
+    <li class="flex gap-[2px] nav items-center text-base font-medium text-white cursor-pointer"><a
+        href="#"></a>Blog</a></li>
+    <li class="flex gap-[2px] nav items-center text-base font-medium text-white cursor-pointer"><a
+        href="#"></a>Pages</a></li>
+    <li class="flex gap-[2px] nav items-center text-base font-medium text-white cursor-pointer"><a
+        href="#"></a>Contact</a></li>
+  </ul>
   <!--Main Home starts from here-->
   <section id="home" class="bg-home-bg bg-no-repeat bg-center bg-cover  ">
     <div class="particles-js  dots" id="particles-js"><canvas class="particles-js-canvas-el" width="1332" height="756" style="width: 100%; height: 100%;"></canvas></div>
