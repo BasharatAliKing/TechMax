@@ -92,11 +92,12 @@
   
   #services .card:hover {
     background-position: left bottom;
+    color: var(--white--);
     i{
-        color: white;
+        color: var(--white--);
     }
     button{
-        color: white;
+        color: var(--white--);
     }
   }
   
