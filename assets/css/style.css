@@ -20,6 +20,9 @@
        #about h3{
         color:var(--white--);
        }
+       #choose-us h3{
+        color:var(--white--);
+       }
 
        @media(max-width:992px){
         #about .signature{
@@ -50,6 +53,9 @@
         color: var(--dark--);
        }
        #about h3{
+        color: black;
+       }
+       #choose-us h3{
         color: black;
        }
 }
@@ -146,18 +152,17 @@ button{
 #about{
     color: var(--white--);
 }
-#about .featured-text {
+ .featured-text {
     color: var(--green--);
     position: relative;
 }
-#about  svg path {
+  svg path {
     stroke: var(--green--);
     stroke-width: 0.5rem;
     fill: transparent;
     
 }
-
-#about .featured-text svg {
+ .featured-text svg {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -176,4 +181,13 @@ button{
         background-color: #00b244e5;
         color: white;
     }
+}
+#choose-us{
+    color: var(--white--);
+}
+#choose-us h2{
+    line-height: 60px;
+}
+#choose-us p,h3{
+    color: #acaeb6;
 }
