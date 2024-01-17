@@ -120,11 +120,11 @@ button{
 #services{
     color: var(--white--);
 }
- button:hover{
-    .ml-2{
+#services button:hover{
+    .fa-solid{
         position: relative;
         right: -7px;
-        transform:.9s;
+        transition:.9s;
     }
 }
 
@@ -190,4 +190,11 @@ button{
 }
 #choose-us p,h3{
     color: #acaeb6;
+}
+
+
+@media(max-width:576px){
+    #choose-us h2{
+        line-height: 40px;
+    }
 }
