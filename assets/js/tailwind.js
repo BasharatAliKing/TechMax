@@ -18,7 +18,7 @@ tailwind.config = {
         },
         backgroundImage: {
           'home-bg': "url('/assets/images/pattern-bg-1.jpg')",
-          'timebg': "url('/assets/images/pattern-bg-3.jpg')",
+          'timebg': "url('/assets/images/91.jpg')",
           
         }
       }
