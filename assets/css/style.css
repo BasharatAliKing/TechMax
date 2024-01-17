@@ -191,7 +191,13 @@ button{
 #choose-us p,h3{
     color: #acaeb6;
 }
+#clients{
+    color: var(--white--);
+}
+#clients #value-1,#value-2,#value-3,#value-4{
+    font: 800 40px system-ui;
 
+}
 
 @media(max-width:576px){
     #choose-us h2{
