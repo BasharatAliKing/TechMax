@@ -20,6 +20,14 @@
        #about h3{
         color:var(--white--);
        }
+
+       @media(max-width:576px){
+        #about .signature{
+            max-width: 150px;
+            width: 150px;
+            height: 40px;
+           }
+       }
 }
 .light{
     background-color: var(--dark--);
