@@ -232,11 +232,22 @@ button{
         transition:.9s;
     }
 }
-
-#portfolio img:hover{
-    transition: all .9s;
-    transform: scale(1.1);
+#portfolio .upper-text{
+    /* display: none; */
+bottom: -50px;
 }
+#portfolio .img:hover{
+     img{
+        transition: all .9s;
+    transform: scale(1.1);
+    }
+    .upper-text{
+    bottom: 0px;
+        transition:all .9s;
+    }
+}
+
+
 @media(max-width:576px){
     #choose-us h2{
         line-height: 40px;
