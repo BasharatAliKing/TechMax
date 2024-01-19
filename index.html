@@ -16,7 +16,9 @@
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <!--AOS animation-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+  <!--Slick CSS links-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 </head>
 
 <body>
@@ -347,7 +349,7 @@
           </button>
         </div>
       </div>
-      <ul class="flex gap-5 flex-wrap">
+      <ul class="flex gap-1 md:gap-5 flex-wrap text-sm md:text-base">
         <li class="active flex items-center font-medium text-green">All</li>
         <li class="nav cursor-pointer flex items-center font-medium hover:duration-700 hover:text-green gap-1 ">Web Development</li>
         <li class="nav cursor-pointer flex items-center font-medium hover:duration-700 hover:text-green gap-1 ">Graphic Designing</li>
@@ -358,33 +360,100 @@
         <div class="all-images grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           <div class="overflow-hidden img w-full h-full rounded-md relative"> 
             <img  src="/assets/images/1.jpg" alt="my-pic">
-          <div class="upper-text absolute bottom-0 p-3 bg-green w-full font-medium text-base">Web Developement</div>
+          <div class="upper-text absolute bottom-0 p-3 pl-12 bg-[#404141] w-full font-medium text-base">Web Developement</div>
+          <div class="btn-upper absolute -left-10 bottom-0 p-3 bg-green  font-medium text-base"><i class="fa-solid fa-arrow-right-long "></i></div>
         </div> 
           <div class="overflow-hidden img w-full h-full rounded-md relative"> 
             <img  src="/assets/images/2.jpg" alt="my-pic">
-          <div class="upper-text absolute bottom-0 p-3 bg-green w-full font-medium text-base">Cloud</div>
+          <div class="upper-text absolute bottom-0 p-3 pl-12 bg-[#404141] w-full font-medium text-base">Cloud</div>
+          <div class="btn-upper absolute -left-10 bottom-0 p-3 bg-green  font-medium text-base"><i class="fa-solid fa-arrow-right-long "></i></div>
         </div> 
           <div class="overflow-hidden img w-full h-full rounded-md relative"> 
             <img  src="/assets/images/3.jpg" alt="my-pic">
-          <div class="upper-text absolute bottom-0 p-3 bg-green w-full font-medium text-base">Data Analysis</div>
+          <div class="upper-text absolute bottom-0 p-3 pl-12 bg-[#404141] w-full font-medium text-base">Data Analysis</div>
+          <div class="btn-upper absolute -left-10 bottom-0 p-3 bg-green  font-medium text-base"><i class="fa-solid fa-arrow-right-long "></i></div>
         </div> 
           <div class="overflow-hidden img w-full h-full rounded-md relative"> 
             <img  src="/assets/images/4.jpg" alt="my-pic">
-          <div class="upper-text absolute bottom-0 p-3 bg-green w-full font-medium text-base">Hosting</div>
+          <div class="upper-text absolute bottom-0 p-3 pl-12 bg-[#404141] w-full font-medium text-base">Hosting</div>
+          <div class="btn-upper absolute -left-10 bottom-0 p-3 bg-green  font-medium text-base"><i class="fa-solid fa-arrow-right-long "></i></div>
         </div> 
           <div class="overflow-hidden img w-full h-full rounded-md relative"> 
             <img  src="/assets/images/5.jpg" alt="my-pic">
-          <div class="upper-text absolute bottom-0 p-3 bg-green w-full font-medium text-base">SEO</div>
+          <div class="upper-text absolute bottom-0 p-3 pl-12 bg-[#404141] w-full font-medium text-base">SEO</div>
+          <div class="btn-upper absolute -left-10 bottom-0 p-3 bg-green  font-medium text-base"><i class="fa-solid fa-arrow-right-long "></i></div>
         </div> 
           <div class="overflow-hidden img w-full h-full rounded-md relative"> 
             <img  src="/assets/images/6.jpg" alt="my-pic">
-          <div class="upper-text absolute bottom-0 p-3 bg-green w-full font-medium text-base">Other Category</div>
+          <div class="upper-text absolute bottom-0 p-3 pl-12 bg-[#404141] w-full font-medium text-base">Other Category</div>
+          <div class="btn-upper absolute -left-10 bottom-0 p-3 bg-green  font-medium text-base"><i class="fa-solid fa-arrow-right-long "></i></div>
         </div> 
+           
           </div>
+      </div>
+    </section>
+    <!--Trusted section here-->
+   
+   
+    <section id="trusted" class="bg-[#faa606] py-10">
+      <div class="container">
+        <div class="slider">
+          <div class="p-4"><img class="rounded-md" src="/assets/images/1-white.png" alt=""></div>
+          <div class="p-4"><img class="rounded-md " src="/assets/images/2-white.png" alt=""></div>
+          <div class="p-4"><img class="rounded-md" src="/assets/images/3-white.png" alt=""></div>
+          <div class="p-4"><img class="rounded-md" src="/assets/images/4-white.png" alt=""></div>
+          <div class="p-4"><img class="rounded-md" src="/assets/images/5-white.png" alt=""></div>
+          <div class="p-4"><img class="rounded-md" src="/assets/images/6-white.png" alt=""></div>
+          <div class="p-4"><img class="rounded-md" src="/assets/images/7-white.png" alt=""></div>
+        </div>
+       
       </div>
     </section>
   </section>
   
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+ <script>
+  
+$('.slider').slick({
+  dots:false,
+  autoplay:true,
+  arrows:false,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+ </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({});
