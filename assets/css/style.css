@@ -58,6 +58,13 @@
        #choose-us h3{
         color: black;
        }
+       @media(max-width:992px){
+        #about .signature{
+            max-width: 120px;
+            width: 120px;
+            height: 40px;
+           }
+       }
 }
 button{
     color: var(--white--);
@@ -196,9 +203,40 @@ button{
 }
 #clients #value-1,#value-2,#value-3,#value-4{
     font: 800 40px system-ui;
-
+}
+#portfolio{
+    color: var(--white--);
+}
+#portfolio  ul .nav:hover::before{
+    content: " ";
+    position: absolute;
+    height: 7px;
+    width: 7px;
+    background-color: var(--green--);
+    border-radius: 100%;
+    margin-left: -12px;
+}
+#portfolio  ul .active::before{
+    content: " ";
+    position: absolute;
+    height: 7px;
+    width: 7px;
+    background-color: var(--green--);
+    border-radius: 100%;
+    margin-left: -12px;
+}
+#portfolio button:hover{
+    .fa-solid{
+        position: relative;
+        right: -7px;
+        transition:.9s;
+    }
 }
 
+#portfolio img:hover{
+    transition: all .9s;
+    transform: scale(1.1);
+}
 @media(max-width:576px){
     #choose-us h2{
         line-height: 40px;
