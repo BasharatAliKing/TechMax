@@ -265,7 +265,30 @@ bottom: -50px;
         transition:.9s;
     }
 }
-
+#customers{
+    color: var(--white--);
+}
+#customers .slick-prev:before {
+    font-family: slick;
+    font-size: 25px;
+    line-height: 1;
+    padding: 10px;
+    opacity: .75;
+    margin-left: -10px;
+    color: var(--green--);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#customers .slick-next:before {
+    font-family: slick;
+    font-size: 25px;
+    line-height: 1;
+    padding: 10px;
+    opacity: .75;
+    color: var(--green--);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 @media(max-width:576px){
     #choose-us h2{
         line-height: 40px;
