@@ -20,6 +20,7 @@ tailwind.config = {
           'home-bg': "url('/assets/images/pattern-bg-1.jpg')",
           'timebg': "url('/assets/images/91.jpg')",
           'customersbg': "url('/assets/images/1 (1).jpg')",
+          'footerbg': "url('/assets/images/footer-bg-1.jpg')",
           
         }
       }
