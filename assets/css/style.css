@@ -23,6 +23,9 @@
        #choose-us h3{
         color:var(--white--);
        }
+       #blog .para{
+        color: var(--light--);
+      }
 
        @media(max-width:992px){
         #about .signature{
@@ -56,6 +59,9 @@
         color: black;
        }
        #choose-us h3{
+        color: black;
+       }
+       #blog .para{
         color: black;
        }
        @media(max-width:992px){
@@ -258,6 +264,9 @@ bottom: -50px;
 #plans{
     color: var(--white--);
 }
+#plans button{
+    color: var(--white--);
+}
 #plans button:hover{
     .fa-solid{
         position: relative;
@@ -288,6 +297,24 @@ bottom: -50px;
     color: var(--green--);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+#blog{
+    color: var(--white--);
+}
+#blog button:hover{
+    .fa-solid{
+        position: relative;
+        right: -7px;
+        transition:.9s;
+    }
+}
+#blog .card:hover{
+    img{
+        overflow: hidden;
+        transition: .9s;
+        scale: 1.05;
+    }
 }
 @media(max-width:576px){
     #choose-us h2{
