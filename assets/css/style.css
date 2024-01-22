@@ -204,6 +204,11 @@ button{
 #clients #value-1,#value-2,#value-3,#value-4{
     font: 800 40px system-ui;
 }
+#clients img{
+    height: 50px;
+    width: 50px;
+    fill: orange;
+}
 #portfolio{
     color: var(--white--);
 }
@@ -250,7 +255,16 @@ bottom: -50px;
         transition: all 1.5s;
     }
 }
-
+#plans{
+    color: var(--white--);
+}
+#plans button:hover{
+    .fa-solid{
+        position: relative;
+        right: -7px;
+        transition:.9s;
+    }
+}
 
 @media(max-width:576px){
     #choose-us h2{

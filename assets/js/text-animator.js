@@ -1,21 +1,34 @@
-function animateValue(obj, start, end, duration) {
-    let startTimestamp = null;
-    const step = (timestamp) => {
-      if (!startTimestamp) startTimestamp = timestamp;
-      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      obj.innerHTML = Math.floor(progress * (end - start) + start);
-      if (progress < 1) {
-        window.requestAnimationFrame(step);
-      }
-    };
-    window.requestAnimationFrame(step);
+function animateCounter(targetId, start, end, duration) {
+  const target = document.getElementById(targetId);
+  const range = end - start;
+  const increment = end > start ? 1 : -1;
+  const stepTime = Math.abs(Math.floor(duration / range));
+
+  function updateCounter() {
+    start += increment;
+    target.textContent = start;
+
+    if (start !== end) {
+      requestAnimationFrame(updateCounter);
+    }
   }
-  
-  const obj1 = document.getElementById("value-1");
-  animateValue(obj1, 100, 750, 2300);
-  const obj2 = document.getElementById("value-2");
-  animateValue(obj2, 0, 25, 2000);
-  const obj3 = document.getElementById("value-3");
-  animateValue(obj3, 100, 200, 1500);
-  const obj4 = document.getElementById("value-4");
-  animateValue(obj4, 0, 4, 1200);
+
+  requestAnimationFrame(updateCounter);
+}
+
+// Trigger the counter animation when the section is reached
+document.addEventListener("scroll", function () {
+  const section = document.getElementById("counter-section");
+  const sectionTop = section.offsetTop;
+  const sectionHeight = section.offsetHeight;
+  const windowHeight = window.innerHeight;
+  const scrollY = window.scrollY;
+
+  if (scrollY > sectionTop - windowHeight + sectionHeight / 4) {
+    animateCounter("user-counterone", 200, 250, 2000); // Example values, adjust as needed
+    animateCounter("user-countertwo", 0, 30, 2000); // Example values, adjust as needed
+    animateCounter("user-counterthree", 640, 740, 2000); // Example values, adjust as needed
+    animateCounter("user-counterfour", 0, 4, 1000); // Example values, adjust as needed
+    animateCounter("visit-counter", 0, 5000, 2000); // Example values, adjust as needed
+  }
+});
