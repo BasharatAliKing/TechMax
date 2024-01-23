@@ -11,6 +11,7 @@
   <script src="/assets/js/tailwind.js"></script>
   <!--CSS link-->
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/numcounter.css">
   <!--Icons link here-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <!--Icons-->
@@ -20,6 +21,8 @@
   <!--Slick CSS links-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+
 </head>
 
 <body>
@@ -326,36 +329,42 @@
       <div id="counter-section" class="container py-16 grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-6">
         <div data-aos="fade-up"
           class="border  border-green border-t-[8px] w-[70%] md:w-full mx-auto md:mx-0 p-5 md:p-10 border-t-green bg-[#00b2446c] rounded-md flex flex-col gap-1 items-center">
-          <img src="/assets/images/bulb.svg" alt=""> 
-          <div class="flex relative text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium">
-            <div id="user-counterone" class="">0</div><span
-              class="font-bold">+</span>
-          </div>
+          <img src="/assets/images/bulb.svg" alt="">
+          <span
+            class="flex tabular-nums  text-5xl font-extrabold mb-2 transition-[_--num] duration-[3s] ease-out [counter-set:_num_var(--num)] supports-[counter-set]:before:content-[counter(num)]"
+            x-data="{ shown: false }" x-intersect="shown = true" :class="shown && '[--num:750]'">
+            <span class="supports-[counter-set]:sr-only">750</span>+
+          </span>
           <h2 class="text-base md:text-xl font-medium text-center">Finished Projects</h2>
         </div>
         <div data-aos="fade-up"
           class="border  border-green border-t-[8px] w-[70%] md:w-full mx-auto md:mx-0 p-5 md:p-10 border-t-green bg-[#00b2446c] rounded-md flex flex-col gap-1 items-center">
-          <img src="/assets/images/jobs.svg" alt=""> 
-          <div class="flex relative text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium">
-            <div id="user-countertwo" class="">0</div><span
-              class="font-bold">+</span>
-          </div>
+          <img src="/assets/images/jobs.svg" alt="">
+          <span
+            class="flex tabular-nums  text-5xl font-extrabold mb-2 transition-[_--num] duration-[3s] ease-out [counter-set:_num_var(--num)] supports-[counter-set]:before:content-[counter(num)]"
+            x-data="{ shown: false }" x-intersect="shown = true" :class="shown && '[--num:23]'">
+            <span class="supports-[counter-set]:sr-only">23</span>+
+          </span>
           <h2 class="text-base md:text-xl font-medium text-center">Created Jobs</h2>
         </div>
         <div data-aos="fade-up"
           class="border  border-green border-t-[8px]  w-[70%] md:w-full mx-auto md:mx-0 p-5 md:p-10 border-t-green bg-[#00b2446c] rounded-md flex flex-col gap-1 items-center">
           <img src="/assets/images/user.svg" alt="">
-          <div class="flex relative text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium">
-            <div id="user-counterthree">0</div><span>+</span>
-          </div>
+          <span
+            class="flex tabular-nums  text-5xl font-extrabold mb-2 transition-[_--num] duration-[3s] ease-out [counter-set:_num_var(--num)] supports-[counter-set]:before:content-[counter(num)]"
+            x-data="{ shown: false }" x-intersect="shown = true" :class="shown && '[--num:740]'">
+            <span class="supports-[counter-set]:sr-only">740</span>+
+          </span>
           <h2 class="text-base md:text-xl font-medium text-center">Happy Customers</h2>
         </div>
         <div data-aos="fade-up"
           class="border  border-green border-t-[8px]  w-[70%] md:w-full mx-auto md:mx-0 p-5 md:p-10 border-t-green bg-[#00b2446c] rounded-md flex flex-col gap-1 items-center">
           <img src="/assets/images/arrow.svg" alt="">
-          <div class="flex relative text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium">
-            <div id="user-counterfour">0</div><span>+</span>
-          </div>
+          <span
+            class="flex tabular-nums  text-5xl font-extrabold mb-2 transition-[_--num] duration-[3s] ease-out [counter-set:_num_var(--num)] supports-[counter-set]:before:content-[counter(num)]"
+            x-data="{ shown: false }" x-intersect="shown = true" :class="shown && '[--num:4]'">
+            <span class="supports-[counter-set]:sr-only">4</span>+
+          </span>
           <h2 class="text-base md:text-xl font-medium text-center">Years of Experience</h2>
         </div>
 
@@ -432,22 +441,16 @@
     <!--Trusted section here-->
     <section id="trusted" class="bg-green py-10">
       <div class="container flex flex-col gap-3">
-        <h1 class="text-center text-xl md:text-3xl font-medium text-[#ffffffab]">Trusted by Over 500 Clients around the world</h1>
+        <h1 class="text-center text-xl md:text-3xl font-medium text-[#ffffffab]">Trusted by Over 500 Clients around the
+          world</h1>
         <div class="slider">
-          <div class="p-4"><img class="rounded-md  md:mx-0 md:w-auto" src="/assets/images/1-white.png"
-              alt=""></div>
-          <div class="p-4"><img class="rounded-md  md:mx-0 md:w-auto " src="/assets/images/2-white.png"
-              alt=""></div>
-          <div class="p-4"><img class="rounded-md  md:mx-0 md:w-auto" src="/assets/images/3-white.png"
-              alt=""></div>
-          <div class="p-4"><img class="rounded-md  md:mx-0 md:w-auto" src="/assets/images/4-white.png"
-              alt=""></div>
-          <div class="p-4"><img class="rounded-md  md:mx-0 md:w-auto" src="/assets/images/5-white.png"
-              alt=""></div>
-          <div class="p-4"><img class="rounded-md  md:mx-0 md:w-auto" src="/assets/images/6-white.png"
-              alt=""></div>
-          <div class="p-4"><img class="rounded-md  md:mx-0 md:w-auto" src="/assets/images/7-white.png"
-              alt=""></div>
+          <div class="p-4"><img class="rounded-md  md:mx-0 md:w-auto" src="/assets/images/1-white.png" alt=""></div>
+          <div class="p-4"><img class="rounded-md  md:mx-0 md:w-auto " src="/assets/images/2-white.png" alt=""></div>
+          <div class="p-4"><img class="rounded-md  md:mx-0 md:w-auto" src="/assets/images/3-white.png" alt=""></div>
+          <div class="p-4"><img class="rounded-md  md:mx-0 md:w-auto" src="/assets/images/4-white.png" alt=""></div>
+          <div class="p-4"><img class="rounded-md  md:mx-0 md:w-auto" src="/assets/images/5-white.png" alt=""></div>
+          <div class="p-4"><img class="rounded-md  md:mx-0 md:w-auto" src="/assets/images/6-white.png" alt=""></div>
+          <div class="p-4"><img class="rounded-md  md:mx-0 md:w-auto" src="/assets/images/7-white.png" alt=""></div>
         </div>
 
       </div>
@@ -473,8 +476,8 @@
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-5">
         <div class="border border-green w-full flex flex-col gap-4 rounded-md p-5 mx-auto">
-           <img src="/assets/images/plan.svg" class="mx-auto w-[50px] h-[50px] my-3" alt="">
-           <h2 class="text-2xl font-medium text-center capitalize">Free Plan</h2>
+          <img src="/assets/images/plan.svg" class="mx-auto w-[50px] h-[50px] my-3" alt="">
+          <h2 class="text-2xl font-medium text-center capitalize">Free Plan</h2>
           <h1 class="text-5xl font-bold text-center"><sup class="text-green ">$</sup>00</h1>
           <h3 class="text-base font-normal italic text-center">Per Project</h3>
           <div class="w-24 mx-auto h-[2px]  bg-green"></div>
@@ -483,11 +486,13 @@
           <p class="text-sm md:text-base text-center capitalize">Lorem ipsum dolor sit</p>
           <p class="text-sm md:text-base text-center capitalize">Free Lorem ipsum sit.</p>
           <p class="text-sm md:text-base text-center capitalize">Addes lorem ipsup sit.</p>
-          <button class="mt-5 text-green text-center border-2 text-sm md:text-base font-medium border-green rounded-tr-2xl hover:duration-700 hover:bg-green hover:text-white rounded-bl-2xl py-3">Select Plan</button>
+          <button
+            class="mt-5 text-green text-center border-2 text-sm md:text-base font-medium border-green rounded-tr-2xl hover:duration-700 hover:bg-green hover:text-white rounded-bl-2xl py-3">Select
+            Plan</button>
         </div>
         <div class="border border-green w-full flex flex-col gap-4 rounded-md p-5 mx-auto">
-           <img src="/assets/images/plan.svg" class="mx-auto w-[50px] h-[50px] my-3" alt="">
-           <h2 class="text-2xl font-medium text-center capitalize">Standard Plan</h2>
+          <img src="/assets/images/plan.svg" class="mx-auto w-[50px] h-[50px] my-3" alt="">
+          <h2 class="text-2xl font-medium text-center capitalize">Standard Plan</h2>
           <h1 class="text-5xl font-bold text-center"><sup class="text-green ">$</sup>85</h1>
           <h3 class="text-base font-normal italic text-center">Per Project</h3>
           <div class="w-24 mx-auto h-[2px]  bg-green"></div>
@@ -496,12 +501,17 @@
           <p class="text-sm md:text-base text-center capitalize">Lorem ipsum dolor sit</p>
           <p class="text-sm md:text-base text-center capitalize">Free Lorem ipsum sit.</p>
           <p class="text-sm md:text-base text-center capitalize">Addes lorem ipsup sit.</p>
-          <button class="mt-5 text-green text-center border-2 text-sm md:text-base font-medium border-green rounded-tr-2xl hover:duration-700 hover:bg-green hover:text-white rounded-bl-2xl py-3">Select Plan</button>
+          <button
+            class="mt-5 text-green text-center border-2 text-sm md:text-base font-medium border-green rounded-tr-2xl hover:duration-700 hover:bg-green hover:text-white rounded-bl-2xl py-3">Select
+            Plan</button>
         </div>
-        <div class="relative overflow-hidden border border-green w-full flex flex-col gap-4 bg-green rounded-md p-5 mx-auto">
-          <div class="absolute rotate-45 text-base bg-white py-1 font-medium w-[70%] -right-12 top-12 sm:top-8 text-green text-center">Most Popular</div>
-           <img src="/assets/images/plan.svg" class="mx-auto w-[50px] h-[50px] my-3" alt="">
-           <h2 class="text-2xl font-medium text-center capitalize">pro Plan</h2>
+        <div
+          class="relative overflow-hidden border border-green w-full flex flex-col gap-4 bg-green rounded-md p-5 mx-auto">
+          <div
+            class="absolute rotate-45 text-base bg-white py-1 font-medium w-[70%] -right-12 top-12 sm:top-8 text-green text-center">
+            Most Popular</div>
+          <img src="/assets/images/plan.svg" class="mx-auto w-[50px] h-[50px] my-3" alt="">
+          <h2 class="text-2xl font-medium text-center capitalize">pro Plan</h2>
           <h1 class="text-5xl font-bold text-center"><sup class="">$</sup>150</h1>
           <h3 class="text-base text-white font-normal italic text-center">Per Project</h3>
           <div class="w-24 mx-auto h-[2px]  bg-white"></div>
@@ -510,11 +520,13 @@
           <p class="text-sm md:text-base text-center capitalize">Lorem ipsum dolor sit</p>
           <p class="text-sm md:text-base text-center capitalize">Free Lorem ipsum sit.</p>
           <p class="text-sm md:text-base text-center capitalize">Addes lorem ipsup sit.</p>
-          <button class="mt-5 text-green text-center border-2 text-sm md:text-base font-medium border-whit text-white rounded-tr-2xl hover:duration-700 hover:bg-white hover:text-green rounded-bl-2xl py-3">Select Plan</button>
+          <button
+            class="mt-5 text-green text-center border-2 text-sm md:text-base font-medium border-whit text-white rounded-tr-2xl hover:duration-700 hover:bg-white hover:text-green rounded-bl-2xl py-3">Select
+            Plan</button>
         </div>
         <div class="border border-green w-full flex flex-col gap-4 rounded-md p-5 mx-auto">
-           <img src="/assets/images/plan.svg" class="mx-auto w-[50px] h-[50px] my-3" alt="">
-           <h2 class="text-2xl font-medium text-center capitalize ">Ultimate Plan</h2>
+          <img src="/assets/images/plan.svg" class="mx-auto w-[50px] h-[50px] my-3" alt="">
+          <h2 class="text-2xl font-medium text-center capitalize ">Ultimate Plan</h2>
           <h1 class="text-5xl font-bold text-center"><sup class="text-green ">$</sup>210</h1>
           <h3 class="text-base font-normal italic text-center">Per Project</h3>
           <div class="w-24 mx-auto h-[2px]  bg-green"></div>
@@ -523,48 +535,58 @@
           <p class="text-sm md:text-base text-center capitalize">Lorem ipsum dolor sit</p>
           <p class="text-sm md:text-base text-center capitalize">Free Lorem ipsum sit.</p>
           <p class="text-sm md:text-base text-center capitalize">Addes lorem ipsup sit.</p>
-          <button class="mt-5 text-green text-center border-2 text-sm md:text-base font-medium border-green rounded-tr-2xl hover:duration-700 hover:bg-green hover:text-white rounded-bl-2xl py-3">Select Plan</button>
+          <button
+            class="mt-5 text-green text-center border-2 text-sm md:text-base font-medium border-green rounded-tr-2xl hover:duration-700 hover:bg-green hover:text-white rounded-bl-2xl py-3">Select
+            Plan</button>
         </div>
-        
+
       </div>
     </section>
     <!--Customers testimonials-->
     <section id="customers" class=" bg-customersbg bg-fixed bg-no-repeat bg-center">
-        <div class="container py-10 bg-[#00000087] flex flex-col gap-10">
-          <div class="flex flex-col mx-auto ">
-            <h2 class="uppercase flex mx-auto text-base md:text-lg items-center gap-2 text-green font-medium"> <span
+      <div class="container py-10 bg-[#00000087] flex flex-col gap-10">
+        <div class="flex flex-col mx-auto ">
+          <h2 class="uppercase flex mx-auto text-base md:text-lg items-center gap-2 text-green font-medium"> <span
               class="h-[7px] w-[7px] rounded-full bg-green"></span> testimonials<span
               class="h-[7px] w-[7px] rounded-full bg-green"></span></h2>
-              <h1 class="text-3xl sm:text-4xl text-center md:text-4xl lg:text-5xl font-bold">Customers Testimonials</h1>
-          </div>
-          <div id="slidertwo" class="md:w-3/4 lg:w-2/4 mx-auto w-[70%]">
-            <div class="flex flex-col gap-10">
-              <img src="/assets/images/2.png" class="w-20 h-20 mx-auto rounded-full border-2 border-green" alt="my-img">
-              <p class="mt-5 text-[20px] md:text-[24px] leading-tight italic text-center"> ipsum dolor sit amet consectetur adipisicing elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis explicabo odio tenetur nulla sint vel.</p>
-             <div class="flex mt-5 flex-col">
+          <h1 class="text-3xl sm:text-4xl text-center md:text-4xl lg:text-5xl font-bold">Customers Testimonials</h1>
+        </div>
+        <div id="slidertwo" class="md:w-3/4 lg:w-2/4 mx-auto w-[70%]">
+          <div class="flex flex-col gap-10">
+            <img src="/assets/images/2.png" class="w-20 h-20 mx-auto rounded-full border-2 border-green" alt="my-img">
+            <p class="mt-5 text-[20px] md:text-[24px] leading-tight italic text-center"> ipsum dolor sit amet
+              consectetur adipisicing elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis explicabo
+              odio tenetur nulla sint vel.</p>
+            <div class="flex mt-5 flex-col">
               <h4 class="text-base md:text-xl font-medium text-center">Steve Smith</h4>
               <p class="text-sm md:text-base font-normal text-center">Manager</p>
-             </div>
             </div>
-            <div class="flex flex-col gap-10">
-              <img src="/assets/images/3 (1).png" class="w-20 h-20 mx-auto rounded-full border-2 border-green" alt="my-img">
-              <p class="mt-5 text-[20px] md:text-[24px] leading-tight italic text-center"> ipsum dolor sit amet consectetur adipisicing elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis explicabo odio tenetur nulla sint vel.</p>
-             <div class="flex mt-5 flex-col">
+          </div>
+          <div class="flex flex-col gap-10">
+            <img src="/assets/images/3 (1).png" class="w-20 h-20 mx-auto rounded-full border-2 border-green"
+              alt="my-img">
+            <p class="mt-5 text-[20px] md:text-[24px] leading-tight italic text-center"> ipsum dolor sit amet
+              consectetur adipisicing elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis explicabo
+              odio tenetur nulla sint vel.</p>
+            <div class="flex mt-5 flex-col">
               <h4 class="text-base md:text-xl font-medium text-center">Alexandra Merry</h4>
               <p class="text-sm md:text-base font-normal text-center">Officer</p>
-             </div>
             </div>
-            <div class="flex flex-col gap-10">
-              <img src="/assets/images/1 (1).png" class="w-20 h-20 mx-auto rounded-full border-2 border-green" alt="my-img">
-              <p class="mt-5 text-[20px] md:text-[24px] leading-tight italic text-center"> ipsum dolor sit amet consectetur adipisicing elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis explicabo odio tenetur nulla sint vel.</p>
-             <div class="flex mt-5 flex-col">
+          </div>
+          <div class="flex flex-col gap-10">
+            <img src="/assets/images/1 (1).png" class="w-20 h-20 mx-auto rounded-full border-2 border-green"
+              alt="my-img">
+            <p class="mt-5 text-[20px] md:text-[24px] leading-tight italic text-center"> ipsum dolor sit amet
+              consectetur adipisicing elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis explicabo
+              odio tenetur nulla sint vel.</p>
+            <div class="flex mt-5 flex-col">
               <h4 class="text-base md:text-xl font-medium text-center">Yusuf Amin</h4>
               <p class="text-sm md:text-base font-normal text-center">Founder</p>
-             </div>
             </div>
-           
-          </div>       
+          </div>
+
         </div>
+      </div>
     </section>
     <!--Blog section start from here-->
     <section id="blog" class=" container py-10 flex flex-col gap-10 md:gap-20">
@@ -588,69 +610,93 @@
           <div class="absolute z-30 top-2 left-2 bg-[#00b24494] px-3 py-[2px] rounded-full">05 Oct 2023</div>
           <img src="/assets/images/Blog-1.jpg" class="overflow-hidden hover:duration-700 hover:scale-105" alt="my-img">
           <div class="px-5 pb-5 ">
-                <div class="para flex gap-3 text-sm">
-                  <div class="flex gap-2 items-center"><i class="fa-regular fa-bookmark"></i><h4>Hosting</h4></div> |
-                  <div class="flex gap-2 items-center"><i class="fa-regular fa-user"></i><h4>Allen Morry</h4></div>
-                </div>
-                <h2 class="font-semibold text-[22px] hover:duration-700 hover:text-green">How Litespeed Technology Works To Speed Up Your Site</h2>
-                <p class="para text-sm md:text-base  font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates molestiae</p>
-                <button
-                class="py-3 flex items-center font-medium text-green text-sm md:text-base border-green hover:duration-700 hover:bg-transparent">
-                <div class="text">Read More</div> <i class="fa-solid fa-arrow-right-long ml-2"></i>
-              </button>
+            <div class="para flex gap-3 text-sm">
+              <div class="flex gap-2 items-center"><i class="fa-regular fa-bookmark"></i>
+                <h4>Hosting</h4>
+              </div> |
+              <div class="flex gap-2 items-center"><i class="fa-regular fa-user"></i>
+                <h4>Allen Morry</h4>
               </div>
+            </div>
+            <h2 class="font-semibold text-[22px] hover:duration-700 hover:text-green">How Litespeed Technology Works To
+              Speed Up Your Site</h2>
+            <p class="para text-sm md:text-base  font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing
+              elit.Iure nulla dolorem, voluptates molestiae</p>
+            <button
+              class="py-3 flex items-center font-medium text-green text-sm md:text-base border-green hover:duration-700 hover:bg-transparent">
+              <div class="text">Read More</div> <i class="fa-solid fa-arrow-right-long ml-2"></i>
+            </button>
+          </div>
         </div>
         <div class="card overflow-hidden w-full flex flex-col gap-3 rounded-md bg-[#00b24494] relative">
           <div class="absolute z-30 top-2 left-2 bg-[#00b24494] px-3 py-[2px] rounded-full">05 Oct 2023</div>
           <img src="/assets/images/Blog-2.jpg" class="overflow-hidden hover:duration-700 hover:scale-105" alt="my-img">
           <div class="px-5 pb-5 ">
-                <div class="para flex gap-3 text-sm">
-                  <div class="flex gap-2 items-center"><i class="fa-regular fa-bookmark"></i><h4>Hosting</h4></div> |
-                  <div class="flex gap-2 items-center"><i class="fa-regular fa-user"></i><h4>Allen Morry</h4></div>
-                </div>
-                <h2 class="font-semibold text-[22px] hover:duration-700 hover:text-green">How Litespeed Technology Works To Speed Up Your Site</h2>
-                <p class="para text-sm md:text-base  font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates molestiae</p>
-                <button
-                class="py-3 flex items-center font-medium text-green text-sm md:text-base border-green hover:duration-700 hover:bg-transparent">
-                <div class="text">Read More</div> <i class="fa-solid fa-arrow-right-long ml-2"></i>
-              </button>
+            <div class="para flex gap-3 text-sm">
+              <div class="flex gap-2 items-center"><i class="fa-regular fa-bookmark"></i>
+                <h4>Hosting</h4>
+              </div> |
+              <div class="flex gap-2 items-center"><i class="fa-regular fa-user"></i>
+                <h4>Allen Morry</h4>
               </div>
+            </div>
+            <h2 class="font-semibold text-[22px] hover:duration-700 hover:text-green">How Litespeed Technology Works To
+              Speed Up Your Site</h2>
+            <p class="para text-sm md:text-base  font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing
+              elit.Iure nulla dolorem, voluptates molestiae</p>
+            <button
+              class="py-3 flex items-center font-medium text-green text-sm md:text-base border-green hover:duration-700 hover:bg-transparent">
+              <div class="text">Read More</div> <i class="fa-solid fa-arrow-right-long ml-2"></i>
+            </button>
+          </div>
         </div>
         <div class="card overflow-hidden w-full flex flex-col gap-3 rounded-md bg-[#00b24494] relative">
           <div class="absolute z-30 top-2 left-2 bg-[#00b24494] px-3 py-[2px] rounded-full">05 Oct 2023</div>
           <img src="/assets/images/Blog-3.jpg" class="overflow-hidden hover:duration-700 hover:scale-105" alt="my-img">
           <div class="px-5 pb-5 ">
-                <div class="para flex gap-3 text-sm">
-                  <div class="flex gap-2 items-center"><i class="fa-regular fa-bookmark"></i><h4>Hosting</h4></div> |
-                  <div class="flex gap-2 items-center"><i class="fa-regular fa-user"></i><h4>Allen Morry</h4></div>
-                </div>
-                <h2 class="font-semibold text-[22px] hover:duration-700 hover:text-green">How Litespeed Technology Works To Speed Up Your Site</h2>
-                <p class="para text-sm md:text-base  font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates molestiae</p>
-                <button
-                class="py-3 flex items-center font-medium text-green text-sm md:text-base border-green hover:duration-700 hover:bg-transparent">
-                <div class="text">Read More</div> <i class="fa-solid fa-arrow-right-long ml-2"></i>
-              </button>
+            <div class="para flex gap-3 text-sm">
+              <div class="flex gap-2 items-center"><i class="fa-regular fa-bookmark"></i>
+                <h4>Hosting</h4>
+              </div> |
+              <div class="flex gap-2 items-center"><i class="fa-regular fa-user"></i>
+                <h4>Allen Morry</h4>
               </div>
+            </div>
+            <h2 class="font-semibold text-[22px] hover:duration-700 hover:text-green">How Litespeed Technology Works To
+              Speed Up Your Site</h2>
+            <p class="para text-sm md:text-base  font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing
+              elit.Iure nulla dolorem, voluptates molestiae</p>
+            <button
+              class="py-3 flex items-center font-medium text-green text-sm md:text-base border-green hover:duration-700 hover:bg-transparent">
+              <div class="text">Read More</div> <i class="fa-solid fa-arrow-right-long ml-2"></i>
+            </button>
+          </div>
         </div>
       </div>
     </section>
     <!--footer section starts from here-->
     <section class="bg-footerbg bg-no-repeat bg-center bg-cover text-white">
-        <div class="container py-10 grid grid-cols-4 gap-3">
-                <div>
-                  <img src="/assets/images/Logo_white.png" class="w-[50%]" alt="my-img">
-                  <p class="text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem optio facilis enim veritatis sapiente vitae ducimus ab non molestiae modi?</p>
-                  <div class="flex flex-col gap-1">
-                    <p class="capitalize text-sm md:text-base font-normal">Subscribe to our news letter</p>
-                    <div class="flex bg-[#969696]"><input type="text" class=" px-2 text-white outline-none bg-transparent placeholder:text-white" placeholder="Email Address"> 
-                    <button class="p-3 bg-green text-white hover:duration-700 hover:text-white cursor-pointer">Subscribe</button> </div>
-                  </div>
-                  <p class="text-xs font-medium text-gray-300">* We will not share your personal info</p>
-                </div>
-                <div></div>
-                <div></div>
-                <div></div>
+      <div class="container py-10 grid grid-cols-4 gap-3">
+        <div>
+          <img src="/assets/images/Logo_white.png" class="w-[50%]" alt="my-img">
+          <p class="text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem optio facilis
+            enim veritatis sapiente vitae ducimus ab non molestiae modi?</p>
+          <div class="flex flex-col gap-1">
+            <p class="capitalize text-sm md:text-base font-normal">Subscribe to our news letter</p>
+            <div class="flex bg-[#969696]"><input type="text"
+                class=" px-2 text-white outline-none bg-transparent placeholder:text-white" placeholder="Email Address">
+              <button
+                class="p-3 bg-green text-white hover:duration-700 hover:text-white cursor-pointer">Subscribe</button>
+            </div>
+          </div>
+          <p class="text-xs font-medium text-gray-300">* We will not share your personal info</p>
         </div>
+        <div>
+
+        </div>
+        <div></div>
+        <div></div>
+      </div>
     </section>
   </section>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -724,8 +770,8 @@
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            infinite:true,
-            autoplay:true,
+            infinite: true,
+            autoplay: true,
           }
         }
         // You can unslick at a given breakpoint now by adding:
@@ -741,6 +787,10 @@
   <script src="/assets/js/text-animator.js"></script>
   <script src="/assets/js/nav.js"></script>
   <script src="/assets/js/tilt.js"></script>
+  <!--Numbers counter link -->
+  <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
 </body>
 
 </html>
