@@ -3,6 +3,7 @@ const navbar=document.getElementById("navbar");
 const menunavbar=document.getElementById("menu-navbar");
 const resnavbar=document.getElementById("res-navbar");
 const mainscreen=document.getElementById("screen");
+const navlogo=document.getElementById("nav-logo");
 menunavbar.addEventListener("click",(e)=>{
     e.preventDefault();
     console.log("clicked...")
@@ -21,10 +22,12 @@ mode.addEventListener("click",(e)=>{
         e.target.name="moon";
       //  e.target.body.style="background-color:white";
         mainscreen.className="light";
+        navlogo.innerHTML="<img src='/assets/images/Logo.png' alt=''>";
     }
     else{
         e.target.name="sunny";
-        mainscreen.className="dark"
+        mainscreen.className="dark";
+        navlogo.innerHTML="<img src='/assets/images/Logo_white.png' alt=''>";
     }
 });
 
@@ -33,7 +36,9 @@ document.addEventListener("scroll",(e)=>{
     console.log("Scrolled....");
     if(window.scrollY>10){
      navbar.style="background-color:#00b243";
+     navlogo.innerHTML="<img src='/assets/images/Logo_Dark_Blue.png' alt=''>";
     }else{
         navbar.style="md:background-color:transparent";
+        navlogo.innerHTML="<img src='/assets/images/Logo_white.png' alt=''>";
     }
 })

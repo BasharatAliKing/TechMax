@@ -30,7 +30,7 @@
     <!--Navbar starts here-->
     <nav id="navbar" class="bg-green md:bg-transparent py-3  fixed z-50 w-full ">
       <div class="container flex items-center">
-        <div><img src="/assets/images/logo-light.png" alt=""></div>
+        <div id="nav-logo" class="w-[15%]"><img src="/assets/images/Logo_white.png" alt=""></div>
         <ul class="hidden lg:flex gap-7 mx-auto ">
           <li class="flex gap-[2px]  items-center text-base font-medium  cursor-pointer active"><a href="#"></a>Home</a>
           </li>
@@ -677,17 +677,18 @@
     <!--footer section starts from here-->
     <section class="bg-footerbg bg-no-repeat bg-center bg-cover text-white">
       <div class="container py-10 grid grid-cols-1 lg:grid-cols-4 gap-3">
-        <div>
-          <img src="/assets/images/Logo_white.png" class="w-[50%]" alt="my-img">
+        <div class="flex flex-col gap-2 w-full">
+          <img src="/assets/images/Logo_white.png" class="w-[50%] lg:w-[60%]" alt="my-img">
           <p class="text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem optio facilis
             enim veritatis sapiente vitae ducimus ab non molestiae modi?</p>
           <div class="flex flex-col gap-1">
             <p class="capitalize text-sm md:text-base font-normal">Subscribe to our news letter</p>
-            <div class="flex bg-[#969696]"><input type="text"
-                class=" px-2 text-white outline-none bg-transparent placeholder:text-white" placeholder="Email Address">
-              <button
-                class="p-3 bg-green text-white hover:duration-700 hover:text-white cursor-pointer">Subscribe</button>
-            </div>
+           <form action="" class="flex bg-[#969696]">
+            <input type="text"
+              class=" px-2 text-white outline-none bg-transparent placeholder:text-white w-full" placeholder="Email Address">
+            <button
+              class="p-2 bg-green text-white hover:duration-700 hover:text-white cursor-pointer">Subscribe</button>
+           </form>
           </div>
           <p class="text-xs font-medium text-gray-300">* We will not share your personal info</p>
         </div>
