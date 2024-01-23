@@ -41,4 +41,11 @@ document.addEventListener("scroll",(e)=>{
         navbar.style="md:background-color:transparent";
         navlogo.innerHTML="<img src='/assets/images/Logo_white.png' alt=''>";
     }
+});
+window.addEventListener("resize",(e)=>{
+    e.preventDefault();
+    console.log("Screen Resizesss....")
+    if(window.innerWidth < 640){
+        navlogo.innerHTML="<img src='/assets/images/Logo_Dark_Blue.png' alt=''>";
+     }
 })
