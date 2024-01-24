@@ -41,6 +41,12 @@
     #home .king{
         background-color: #ffffffcc;
        }
+       #home button{
+        color: black;
+       }
+       #home button:hover{
+        color: white;
+       }
        #about .signature{
         background-image: url('/assets/images/signature-dark.png');
         background-size: contain;
