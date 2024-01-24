@@ -305,10 +305,12 @@ bottom: -50px;
 }
 #blog .card:hover{
     img{
-        overflow: hidden;
         transition: .9s;
         scale: 1.05;
     }
+}
+#blog #pro:hover{
+    color: green;
 }
 #footer ul li:hover{
      span{
