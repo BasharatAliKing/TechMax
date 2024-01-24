@@ -23,9 +23,7 @@
        #choose-us h3{
         color:var(--white--);
        }
-       #blog .para{
-        color: var(--light--);
-      }
+     
 
        @media(max-width:992px){
         #about .signature{
@@ -61,9 +59,7 @@
        #choose-us h3{
         color: black;
        }
-       #blog .para{
-        color: black;
-       }
+      
        @media(max-width:992px){
         #about .signature{
             max-width: 120px;
@@ -274,9 +270,7 @@ bottom: -50px;
         transition:.9s;
     }
 }
-#customers{
-    color: var(--white--);
-}
+
 #customers .slick-prev:before {
     font-family: slick;
     font-size: 25px;
