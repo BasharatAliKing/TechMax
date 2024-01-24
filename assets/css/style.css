@@ -316,6 +316,13 @@ bottom: -50px;
         scale: 1.05;
     }
 }
+#footer ul li:hover{
+     span{
+        position: relative;
+        left: 5px;
+        transition: .9s;
+    }
+}
 @media(max-width:576px){
     #choose-us h2{
         line-height: 40px;
