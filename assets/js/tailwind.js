@@ -15,12 +15,14 @@ tailwind.config = {
           clifford: '#da373d',
           dark:"#040922",
           green:"#00b243",
+          light:"#acaeb6"
         },
         backgroundImage: {
           'home-bg': "url('/assets/images/pattern-bg-1.jpg')",
           'timebg': "url('/assets/images/91.jpg')",
           'customersbg': "url('/assets/images/1 (1).jpg')",
           'footerbg': "url('/assets/images/footer-bg-1.jpg')",
+          'aboutcontact': "url('/assets/images/about-contactbg.jpg')",
           
         }
       }

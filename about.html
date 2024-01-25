@@ -25,11 +25,11 @@
 <body>
     <section id="screen" class="dark">
          <!--Navbar starts here-->
-    <nav id="navbar" class="bg-green md:bg-transparent py-3  fixed z-50 w-full ">
+    <nav id="navbar" class="bg-green text-white md:bg-transparent py-3  fixed z-50 w-full ">
         <div class="container flex items-center">
           <div id="nav-logo" class="w-[35%] lg:w-[15%]"><img src="/assets/images/Logo_white.png" alt=""></div>
           <ul class="hidden lg:flex gap-7 mx-auto ">
-            <li class="flex gap-[2px]  items-center text-base font-medium  cursor-pointer"><a href="#"></a>Home</a>
+            <li class="flex gap-[2px]  items-center text-base font-medium  cursor-pointer"><a href="/index.html">Home</a>
             </li>
             <li class="flex gap-[2px] nav items-center text-base font-medium  cursor-pointer active"><a href="/about.html"></a>About</a>
             </li>
@@ -51,6 +51,495 @@
           </div>
         </div>
       </nav>
+        <!--Responcive menu navbar-->
+    <ul id="res-navbar"
+    class="fixed z-10 mt-[-350px] bg-green duration-500  w-full  flex flex-col gap-4 items-center py-5">
+    <li class="flex gap-[2px]  items-center text-base font-medium text-white cursor-pointer active"><a
+        href="/"></a>Home</a></li>
+    <li class="flex gap-[2px] nav items-center text-base font-medium text-white cursor-pointer"><a
+        href="/"></a>About</a></li>
+    <li class="flex gap-[2px] nav items-center text-base font-medium text-white cursor-pointer"><a
+        href="/"></a>Services</a></li>
+    <li class="flex gap-[2px] nav items-center text-base font-medium text-white cursor-pointer"><a
+        href="/"></a>Portfolio</a></li>
+    <li class="flex gap-[2px] nav items-center text-base font-medium text-white cursor-pointer"><a
+        href="/"></a>Blog</a></li>
+    <li class="flex gap-[2px] nav items-center text-base font-medium text-white cursor-pointer"><a
+        href="/"></a>Pages</a></li>
+    <li class="flex gap-[2px] nav items-center text-base font-medium text-white cursor-pointer"><a
+        href="/"></a>Contact</a></li>
+  </ul>
+  <!--About here-->
+  <section id="abouts" class="bg-home-bg text-white ">
+    <div class="bg-[#0d1925c9] h-[50vh] w-full flex flex-col gap-5 items-center justify-center">
+        <h1 class="text-3xl sm:text-4xl md:text-4xl lg:text-6xl leading-tight font-bold">About Us</h1>
+        <div class="flex gap-2 items-center font-medium">
+           <a href="/index.html" class="flex items-center gap-1 hover:text-green"> <i class="fa-solid fa-house-chimney"></i><p>Home</p></a>
+            /
+            <span class="text-light">About Us</span>
+        </div>
+    </div>
+  </section>
+   <!--Abouts us starts from here-->
+   <section id="about" class="container py-16">
+    <div class="flex flex-col md:flex-row gap-5">
+      <div class="md:hidden flex items-center lg:items-end lg:justify-end "><img src="/assets/images/about.png"
+          data-tilt alt=""></div>
+      <div class="md:w-1/2 flex flex-col gap-10">
+        <div class="flex flex-col gap-3">
+          <h4 class="uppercase flex text-base md:text-lg items-center gap-2 text-green font-medium"> <span
+              class="h-[7px] w-[7px] rounded-full bg-green"></span> About us <span
+              class="h-[7px] w-[7px] rounded-full bg-green"></span></h4>
+          <h2 class="title wow fadeInUp text-3xl md:text-4xl lg:text-5xl font-medium capitalize " data-wow-delay=".4s"
+            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;"><span
+              class="hollow-text capitalize">trusted</span> by worldwide clients since<span class="featured-text">
+              1980.
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
+                <path d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"></path>
+              </svg></span></h2>
+          <p class="text-sm md:text-base lg:text-lg font-normal mt-3">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. A officia molestiae dolorum tempora ut accusamus
+            cupiditate! Nesciunt tempora reiciendis libero voluptate!</p>
+        </div>
+        <!--boxes here-->
+        <div class="grid grid-cols-1 xl:grid-cols-2 gap-5 ">
+          <div class="flex gap-4 card">
+            <i class="fa-solid fa-medal bg-[#00b24456] text-green  text-3xl p-2 px-3 mt-2 rounded-md mb-auto"></i>
+            <div>
+              <h3 class="text-lg md:text-[22px] font-medium">First On Field</h3>
+              <p class="text-sm md:text-base  font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur, iste</p>
+            </div>
+          </div>
+          <div class="flex gap-4 card">
+            <i class="fa-solid fa-medal bg-[#00b24456] text-green  text-3xl p-2 px-3 mt-2 rounded-md mb-auto"></i>
+            <div>
+              <h3 class="text-lg md:text-[22px] font-medium">Easy To Reach</h3>
+              <p class="text-sm md:text-base  font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur, iste</p>
+            </div>
+          </div>
+          <div class="flex gap-4 card">
+            <i class="fa-solid fa-medal bg-[#00b24456] text-green  text-3xl p-2 px-3 mt-2 rounded-md mb-auto"></i>
+            <div>
+              <h3 class="text-lg md:text-[22px] font-medium">Worldwide Services</h3>
+              <p class="text-sm md:text-base  font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur, iste</p>
+            </div>
+          </div>
+          <div class="flex gap-4 card">
+            <i class="fa-solid fa-medal bg-[#00b24456] text-green  text-3xl p-2 px-3 mt-2 rounded-md mb-auto"></i>
+            <div>
+              <h3 class="text-lg md:text-[22px] font-medium">24/7 Support</h3>
+              <p class="text-sm md:text-base  font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur, iste</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex ">
+          <button
+            class="px-9 my-auto py-3 border-2 mr-auto capitalize bg-green rounded-tr-2xl rounded-bl-2xl flex items-center font-medium text-sm md:text-base border-green hover:duration-700 hover:bg-transparent">
+            Get in touch
+          </button>
+          <div class="md:mx-auto ml-auto flex flex-col md:items-center">
+            <div class="signature"></div>
+            <span class="text-green text-sm lg:text-base mx-auto">CEO & Founder</span>
+          </div>
+        </div>
+      </div>
+      <div class="md:w-1/2 hidden md:flex items-center lg:items-end lg:justify-end "><img
+          src="/assets/images/about.png" data-tilt alt=""></div>
+    </div>
+  </section>
+  <!--Team section starts from here-->
+  <section id="team" class="container  py-16">
+    <div class="flex flex-col items-center md:flex-row gap-5">
+        <div class="md:w-3/4 flex flex-col gap-3">
+          <h2 class="uppercase flex text-base md:text-lg items-center gap-2 text-green font-medium"> <span
+              class="h-[7px] w-[7px] rounded-full bg-green"></span> Team <span
+              class="h-[7px] w-[7px] rounded-full bg-green"></span></h2>
+          <h1 class="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold capitalize">Our Experts Team Members</h1>
+        </div>
+        <div class="md:w-1/4 md:ml-auto flex items-center justify-end">
+          <button
+            class="px-9 py-3 border-2 bg-green rounded-tr-2xl rounded-bl-2xl flex items-center font-medium text-sm md:text-base border-green hover:duration-700 hover:bg-transparent">
+            <div class="text">See More</div> <i class="fa-solid fa-arrow-right-long ml-2"></i>
+          </button>
+        </div>
+      </div>
+      <!--teams members-->
+      <div class="grid grid-cols-3 gap-5 mt-10 md:mt-20 ">
+        <div class="card">
+            <div class="relative overflow-hidden">
+                <img class="w-full img" src="/assets/images/team-1.jpg" alt="">
+     <!--Social Links-->
+     <ul class="social-link w-full absolute   left-[30%] gap-3">
+        <i class="bg-green flex items-center justify-center rounded-md hover:duration-700  hover:bg-white hover:text-green  h-7 w-7  fa-brands fa-facebook-f"></i>
+        <i class="bg-green flex items-center justify-center rounded-md hover:duration-700  hover:bg-white hover:text-green  h-7 w-7  fa-brands fa-youtube"></i>
+        <i class="bg-green flex items-center justify-center rounded-md hover:duration-700  hover:bg-white hover:text-green  h-7 w-7  fa-brands fa-instagram"></i>
+        <i class="bg-green flex items-center justify-center rounded-md hover:duration-700  hover:bg-white hover:text-green  h-7 w-7  fa-brands fa-twitter"></i>
+         </ul>
+            </div>  <div class="p-5">
+            <h2 class="text-center font-medium text-xl md:text-2xl">Murad Aly</h2>
+            <p class="text-center font-normal text-xs md:text-sm">Ceo Founder</p>
+        </div>
+       </div>
+       <div class="card">
+        <div class="relative overflow-hidden">
+            <img class="w-full img" src="/assets/images/team-2.jpg" alt="">
+ <!--Social Links-->
+ <ul class="social-link w-full absolute   left-[30%] gap-3">
+    <i class="bg-green flex items-center justify-center rounded-md hover:duration-700  hover:bg-white hover:text-green  h-7 w-7  fa-brands fa-facebook-f"></i>
+    <i class="bg-green flex items-center justify-center rounded-md hover:duration-700  hover:bg-white hover:text-green  h-7 w-7  fa-brands fa-youtube"></i>
+    <i class="bg-green flex items-center justify-center rounded-md hover:duration-700  hover:bg-white hover:text-green  h-7 w-7  fa-brands fa-instagram"></i>
+    <i class="bg-green flex items-center justify-center rounded-md hover:duration-700  hover:bg-white hover:text-green  h-7 w-7  fa-brands fa-twitter"></i>
+     </ul>
+        </div>
+         <div class="p-5">
+            <h2 class="text-center font-medium text-xl md:text-2xl">Murad Aly</h2>
+            <p class="text-center font-normal text-xs md:text-sm">Manager</p>
+        </div>
+       </div>
+       <div class="card">
+        <div class="relative overflow-hidden">
+            <img class="w-full img" src="/assets/images/team-3.jpg" alt="">
+ <!--Social Links-->
+ <ul class="social-link w-full absolute   left-[30%] gap-3">
+    <i class="bg-green flex items-center justify-center rounded-md hover:duration-700  hover:bg-white hover:text-green  h-7 w-7  fa-brands fa-facebook-f"></i>
+    <i class="bg-green flex items-center justify-center rounded-md hover:duration-700  hover:bg-white hover:text-green  h-7 w-7  fa-brands fa-youtube"></i>
+    <i class="bg-green flex items-center justify-center rounded-md hover:duration-700  hover:bg-white hover:text-green  h-7 w-7  fa-brands fa-instagram"></i>
+    <i class="bg-green flex items-center justify-center rounded-md hover:duration-700  hover:bg-white hover:text-green  h-7 w-7  fa-brands fa-twitter"></i>
+     </ul>
+        </div>
+        <div class="p-5">
+            <h2 class="text-center font-medium text-xl md:text-2xl">Murad Aly</h2>
+            <p class="text-center font-normal text-xs md:text-sm">co Leader</p>
+        </div>
+       
+       </div>
+      </div>
+  </section>
+   <!--Customers testimonials-->
+   <section id="customers" class=" bg-customersbg bg-fixed bg-no-repeat bg-center">
+    <div class="container py-10 text-white bg-[#00000087] flex flex-col gap-10">
+      <div class="flex flex-col mx-auto ">
+        <h2 class="uppercase flex mx-auto text-base md:text-lg items-center gap-2 text-green font-medium"> <span
+            class="h-[7px] w-[7px] rounded-full bg-green"></span> testimonials<span
+            class="h-[7px] w-[7px] rounded-full bg-green"></span></h2>
+        <h1 class="text-3xl sm:text-4xl text-center md:text-4xl lg:text-5xl font-bold">Customers Testimonials</h1>
+      </div>
+      <div id="slidertwo" class="md:w-3/4 lg:w-2/4 mx-auto w-[70%]">
+        <div class="flex flex-col gap-10">
+          <img src="/assets/images/2.png" class="w-20 h-20 mx-auto rounded-full border-2 border-green" alt="my-img">
+          <p class="mt-5 text-[20px] md:text-[24px] leading-tight italic text-center"> ipsum dolor sit amet
+            consectetur adipisicing elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis explicabo
+            odio tenetur nulla sint vel.</p>
+          <div class="flex mt-5 flex-col">
+            <h4 class="text-base md:text-xl font-medium text-center">Steve Smith</h4>
+            <p class="text-sm md:text-base font-normal text-center">Manager</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-10">
+          <img src="/assets/images/3 (1).png" class="w-20 h-20 mx-auto rounded-full border-2 border-green"
+            alt="my-img">
+          <p class="mt-5 text-[20px] md:text-[24px] leading-tight italic text-center"> ipsum dolor sit amet
+            consectetur adipisicing elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis explicabo
+            odio tenetur nulla sint vel.</p>
+          <div class="flex mt-5 flex-col">
+            <h4 class="text-base md:text-xl font-medium text-center">Alexandra Merry</h4>
+            <p class="text-sm md:text-base font-normal text-center">Officer</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-10">
+          <img src="/assets/images/1 (1).png" class="w-20 h-20 mx-auto rounded-full border-2 border-green"
+            alt="my-img">
+          <p class="mt-5 text-[20px] md:text-[24px] leading-tight italic text-center"> ipsum dolor sit amet
+            consectetur adipisicing elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis explicabo
+            odio tenetur nulla sint vel.</p>
+          <div class="flex mt-5 flex-col">
+            <h4 class="text-base md:text-xl font-medium text-center">Yusuf Amin</h4>
+            <p class="text-sm md:text-base font-normal text-center">Founder</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+   <!--Trusted section here-->
+   <section id="trusted" class="bg-green py-10">
+    <div class="container flex flex-col gap-3">
+      <h1 class="text-center text-xl md:text-3xl font-medium text-[#ffffffab]">Trusted by Over 500 Clients around the
+        world</h1>
+      <div class="slider">
+        <div class="p-4"><img class="rounded-md  md:mx-0 md:w-auto" src="/assets/images/1-white.png" alt=""></div>
+        <div class="p-4"><img class="rounded-md  md:mx-0 md:w-auto " src="/assets/images/2-white.png" alt=""></div>
+        <div class="p-4"><img class="rounded-md  md:mx-0 md:w-auto" src="/assets/images/3-white.png" alt=""></div>
+        <div class="p-4"><img class="rounded-md  md:mx-0 md:w-auto" src="/assets/images/4-white.png" alt=""></div>
+        <div class="p-4"><img class="rounded-md  md:mx-0 md:w-auto" src="/assets/images/5-white.png" alt=""></div>
+        <div class="p-4"><img class="rounded-md  md:mx-0 md:w-auto" src="/assets/images/6-white.png" alt=""></div>
+        <div class="p-4"><img class="rounded-md  md:mx-0 md:w-auto" src="/assets/images/7-white.png" alt=""></div>
+      </div>
+
+    </div>
+  </section>
+   <!--Blog section start from here-->
+   <section id="blog" class=" container py-10 flex flex-col gap-10 md:gap-20">
+    <div class="flex flex-col md:flex-row gap-5">
+      <div class="md:w-1/2 flex flex-col gap-3">
+        <h2 class="uppercase flex text-base md:text-lg items-center gap-2 text-green font-medium"> <span
+            class="h-[7px] w-[7px] rounded-full bg-green"></span> blog <span
+            class="h-[7px] w-[7px] rounded-full bg-green"></span></h2>
+        <h1 class="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold capitalize">Latest news</h1>
+      </div>
+      <div class="md:w-1/2 md:ml-auto flex items-center  md:justify-end">
+        <button
+          class="px-9 py-3 border-2 bg-green rounded-tr-2xl rounded-bl-2xl flex items-center font-medium text-sm md:text-base border-green hover:duration-700 hover:bg-transparent">
+          <div class="text">See All Posts</div> <i class="fa-solid fa-arrow-right-long ml-2"></i>
+        </button>
+      </div>
+    </div>
+    <!--Cards-->
+    <div class="grid grid-cols-1 text-white sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="card overflow-hidden w-full flex flex-col gap-3 rounded-md bg-green relative">
+        <div class="absolute z-30 top-2 left-2 bg-green px-3 py-[2px] rounded-full">05 Oct 2023</div>
+        <div class="overflow-hidden">
+          <img src="/assets/images/Blog-1.jpg" alt="my-img">
+        </div>
+        <div class="px-5 pb-5  ">
+          <div class="text-dark flex gap-3 text-sm">
+            <div class="flex gap-2 items-center"><i class="fa-regular fa-bookmark"></i>
+              <h4>Hosting</h4>
+            </div> |
+            <div class="flex gap-2 items-center"><i class="fa-regular fa-user"></i>
+              <h4>Allen Morry</h4>
+            </div>
+          </div>
+          <h2 class="font-semibold text-[22px] hover:duration-700 ">How Litespeed Technology Works To
+            Speed Up Your Site</h2>
+          <p class=" text-sm md:text-base  font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit.Iure nulla dolorem, voluptates molestiae</p>
+          <button
+            class="py-3 flex  font-medium text-dark text-sm md:text-base border-green hover:duration-700 hover:text-white hover:bg-transparent">
+            <div class="text">Read More</div> <i class="fa-solid fa-arrow-right-long mt-1 ml-2"></i>
+          </button>
+        </div>
+      </div>
+      <div class="card overflow-hidden w-full flex flex-col gap-3 rounded-md bg-green relative">
+        <div class="absolute z-30 top-2 left-2 bg-green px-3 py-[2px] rounded-full">05 Oct 2023</div>
+        <div class="overflow-hidden">
+          <img src="/assets/images/Blog-2.jpg" alt="my-img">
+        </div> 
+        <div class="px-5 pb-5  ">
+          <div class="text-dark flex gap-3 text-sm">
+            <div class="flex gap-2 items-center"><i class="fa-regular fa-bookmark"></i>
+              <h4>Hosting</h4>
+            </div> |
+            <div class="flex gap-2 items-center"><i class="fa-regular fa-user"></i>
+              <h4>Allen Morry</h4>
+            </div>
+          </div>
+          <h2 class="font-semibold text-[22px] hover:duration-700 ">How Litespeed Technology Works To
+            Speed Up Your Site</h2>
+          <p class=" text-sm md:text-base  font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit.Iure nulla dolorem, voluptates molestiae</p>
+          <button
+            class="py-3 flex  font-medium text-dark text-sm md:text-base border-green hover:duration-700 hover:text-white hover:bg-transparent">
+            <div class="text">Read More</div> <i class="fa-solid fa-arrow-right-long mt-1 ml-2"></i>
+          </button>
+        </div>
+      </div>
+      <div class="card overflow-hidden w-full flex flex-col gap-3 rounded-md bg-green relative">
+        <div class="absolute z-30 top-2 left-2 bg-green px-3 py-[2px] rounded-full">05 Oct 2023</div>
+        <div class="overflow-hidden">
+          <img src="/assets/images/Blog-3.jpg" alt="my-img">
+        </div>
+         <div class="px-5 pb-5  ">
+          <div class="text-dark flex gap-3 text-sm">
+            <div class="flex gap-2 items-center"><i class="fa-regular fa-bookmark"></i>
+              <h4>Hosting</h4>
+            </div> |
+            <div class="flex gap-2 items-center"><i class="fa-regular fa-user"></i>
+              <h4>Allen Morry</h4>
+            </div>
+          </div>
+          <h2 class="font-semibold text-[22px] hover:duration-700 ">How Litespeed Technology Works To
+            Speed Up Your Site</h2>
+          <p class=" text-sm md:text-base  font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit.Iure nulla dolorem, voluptates molestiae</p>
+          <button
+            class="py-3 flex  font-medium text-dark text-sm md:text-base border-green hover:duration-700 hover:text-white hover:bg-transparent">
+            <div class="text">Read More</div> <i class="fa-solid fa-arrow-right-long mt-1 ml-2"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Contacts here-->
+  <section class="bg-aboutcontact bg-no-repeat bg-center bg-cover text-white">
+        <div class="bg-[#12345696]">
+            <div class="container flex flex-col gap-4 py-10 md:3/4 lg:1/2 mx-auto ">
+                <h2 class="uppercase flex mx-auto text-base md:text-lg items-center gap-2 text-green font-medium"> <span
+                    class="h-[7px] w-[7px] rounded-full bg-green"></span> contact us <span
+                    class="h-[7px] w-[7px] rounded-full bg-green"></span></h2>
+                    <h1 class="text-3xl sm:text-4xl text-center md:text-4xl lg:text-5xl font-bold capitalize">Get in touch with us</h1>
+                    <p class="mx-auto md:w-1/2 text-center">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Omnis
+                        Id Atque Dignissimos Repellat Quae Ullam.</p>
+                        <button class="capitalize px-12 py-3 border-2 text-green bg-transparent rounded-tr-2xl rounded-bl-2xl flex items-center font-medium text-sm md:text-base border-green hover:duration-700 hover:text-white hover:bg-green mx-auto">Contact Us</button>
+            </div>
+           </div>
+  </section>
+   <!--footer section starts from here-->
+   <section id="footer" class="bg-footerbg bg-no-repeat bg-center bg-cover text-white ">
+    <div class="bg-[#12345682]">
+      <div class="container py-10 flex flex-wrap lg:grid lg:grid-cols-4 gap-6 md:gap-3">
+<div class="flex flex-col gap-2 w-full">
+        <img src="/assets/images/Logo_white.png" class="w-[50%] lg:w-[60%]" alt="my-img">
+        <p class="text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem optio facilis
+          enim veritatis sapiente vitae ducimus ab non molestiae modi?</p>
+        <div class="flex flex-col gap-1">
+          <p class="capitalize text-sm md:text-base font-normal">Subscribe to our news letter</p>
+         <form action="" class="flex bg-[#969696]">
+          <input type="text"
+            class=" px-2 text-white outline-none bg-transparent placeholder:text-white w-full" placeholder="Email Address">
+          <button
+            class="p-2 bg-green text-white hover:duration-700 hover:text-white cursor-pointer">Subscribe</button>
+         </form>
+        </div>
+        <p class="text-xs font-medium text-gray-300">* We will not share your personal info</p>
+      </div>
+      <div class="flex flex-col md:mx-auto">
+          <h4 class="text-lg font-medium">Useful Links</h4>
+          <ul class="flex flex-col gap-3 mt-5">
+            <li class=""><a class="text-sm flex gap-1 items-center" href=""><i class="fa-solid fa-arrow-right-long text-green text-sm mt-[2px]"></i><span>Google</span></a></li>
+            <li class=""><a class="text-sm flex gap-1 items-center" href=""><i class="fa-solid fa-arrow-right-long text-green text-sm mt-[2px]"></i><span>Dribble</span></a></li>
+            <li class=""><a class="text-sm flex gap-1 items-center" href=""><i class="fa-solid fa-arrow-right-long text-green text-sm mt-[2px]"></i><span>Wikipedia</span></a></li>
+            <li class=""><a class="text-sm flex gap-1 items-center" href=""><i class="fa-solid fa-arrow-right-long text-green text-sm mt-[2px]"></i><span>Linkedin</span></a></li>
+          </ul>
+      </div>
+      <div class="flex flex-col mx-auto">
+          <h4 class="text-lg font-medium">Resources</h4>
+          <ul class="flex flex-col gap-3 mt-5">
+            <li><a class="text-sm flex gap-1 items-center" href=""><i class="fa-solid fa-arrow-right-long text-green text-sm mt-[2px]"></i><span>Support</span></a></li>
+            <li><a class="text-sm flex gap-1 items-center" href=""><i class="fa-solid fa-arrow-right-long text-green text-sm mt-[2px]"></i><span>Dashboard</span></a></li>
+            <li><a class="text-sm flex gap-1 items-center" href=""><i class="fa-solid fa-arrow-right-long text-green text-sm mt-[2px]"></i><span>Drivers</span></a></li>
+            <li><a class="text-sm flex gap-1 items-center" href=""><i class="fa-solid fa-arrow-right-long text-green text-sm mt-[2px]"></i><span>Projects</span></a></li>
+          </ul>
+      </div>
+      <div class="flex flex-col ">
+          <h4 class="text-lg font-medium">Contact Information</h4>
+          <ul class="flex flex-col gap-3 mt-3 md:mt-5">
+            <li><a class="text-sm flex gap-1 items-center" href=""><i class="fa-regular fa-envelope text-green text-xl w-5 text-center mt-[2px]"></i><span>example@support.com</span></a></li>
+            <li><a class="text-sm flex gap-1 items-center" href=""><i class="fa-solid fa-location-dot text-green text-xl w-5 text-center mt-[2px]"></i><span>5 xyz st., abc, alexandria, egypt.</span></a></li>
+            <li><a class="text-sm flex gap-1 items-center" href=""><i class="fa-solid fa-mobile-screen-button text-green text-xl w-5 text-center mt-[2px]"></i><span>+92300 33 33 333</span></a></li>
+          </ul>
+          <!--Social Links-->
+          <ul class="flex gap-3 mt-5">
+         <i class="bg-green flex items-center justify-center rounded-md hover:duration-700 hover:-mt-2 hover:bg-white hover:text-green  h-7 w-7  fa-brands fa-facebook-f"></i>
+         <i class="bg-green flex items-center justify-center rounded-md hover:duration-700 hover:-mt-2 hover:bg-white hover:text-green  h-7 w-7  fa-brands fa-youtube"></i>
+         <i class="bg-green flex items-center justify-center rounded-md hover:duration-700 hover:-mt-2 hover:bg-white hover:text-green  h-7 w-7  fa-brands fa-instagram"></i>
+         <i class="bg-green flex items-center justify-center rounded-md hover:duration-700 hover:-mt-2 hover:bg-white hover:text-green  h-7 w-7  fa-brands fa-twitter"></i>
+          </ul>
+      </div>
+      </div>
+      <div class="container py-1 text-xs md:text-sm  flex ">
+      <span>&copy; Created by: B.D king</span>
+      <span class="ml-auto">Terms of use | Privacy Policy.</span>
+    </div>
+    </div>
+  
+  </section>
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+    $('.slider').slick({
+      dots: false,
+      autoplay: true,
+      arrows: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+    $('#slidertwo').slick({
+      dots: false,
+      autoplay: false,
+      arrows: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            autoplay: true,
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({});
+  </script>
+  <script src="/assets/js/text-animator.js"></script>
+  <script src="/assets/js/nav.js"></script>
+  <script src="/assets/js/tilt.js"></script>
+  <!--Numbers counter link -->
+  <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </body>
 </html>
