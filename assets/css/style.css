@@ -82,7 +82,7 @@ button{
    button:hover{
     color: var(--green--);
    }
-h1{
+h1 ,label{
     font-family: 'Jost', sans-serif;
     /* font-family: 'Tajawal', sans-serif; */
 }
@@ -367,6 +367,9 @@ bottom: -50px;
     font-size: 16px;
 }
 #map{
+    color: var(--white--);
+}
+#contact-form{
     color: var(--white--);
 }
 @media(max-width:576px){
