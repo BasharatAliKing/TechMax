@@ -9,7 +9,7 @@ menunavbar.addEventListener("click",(e)=>{
     console.log("clicked...")
     if(e.target.name=="menu"){
         e.target.name="close";
-        resnavbar.style="margin-top:65px";
+        resnavbar.style="margin-top:55px";
     }else{
         e.target.name="menu";
         resnavbar.style="margin-top:-350px";
