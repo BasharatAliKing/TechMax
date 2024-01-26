@@ -1,4 +1,6 @@
-
+*{
+     font-family: 'Tajawal', sans-serif;
+}
 .dark{
     background-color: var(--dark--);
     --white--:white;
@@ -80,6 +82,10 @@ button{
    button:hover{
     color: var(--green--);
    }
+h1{
+    font-family: 'Jost', sans-serif;
+    /* font-family: 'Tajawal', sans-serif; */
+}
 #navbar .container ul .nav:hover::before{
     content: " ";
     position: absolute;

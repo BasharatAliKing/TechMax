@@ -23,8 +23,11 @@ tailwind.config = {
           'customersbg': "url('/assets/images/1 (1).jpg')",
           'footerbg': "url('/assets/images/footer-bg-1.jpg')",
           'aboutcontact': "url('/assets/images/about-contactbg.jpg')",
-          
-        }
+        },
+        fontFamily: {
+          'jost': " ''Jost', sans-serif",
+        },
+       
       }
     }
   }
