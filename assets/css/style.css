@@ -360,6 +360,9 @@ bottom: -50px;
     font-weight: 400;
     font-size: 16px;
 }
+#map{
+    color: var(--white--);
+}
 @media(max-width:576px){
     #choose-us h2{
         line-height: 40px;
