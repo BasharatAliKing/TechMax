@@ -1,36 +1,19 @@
+$(document).ready(function(){
+    $('#menu-navbar').click(function(){
+        $('#res-navbar').slideToggle("slow");
+        $('#menu-navbar').toggleClass('fa-xmark fa-bars');
+    });
+    $('#mode').click(function(){
+        $(this).toggleClass('fa-moon fa-sun');
+        $('#screen').toggleClass('light dark')
+    });
+ });
 const mode=document.getElementById("mode");
 const navbar=document.getElementById("navbar");
 const menunavbar=document.getElementById("menu-navbar");
 const resnavbar=document.getElementById("res-navbar");
 const mainscreen=document.getElementById("screen");
 const navlogo=document.getElementById("nav-logo");
-menunavbar.addEventListener("click",(e)=>{
-    e.preventDefault();
-    console.log("clicked...")
-    if(e.target.name=="menu"){
-        e.target.name="close";
-        resnavbar.style="margin-top:55px";
-    }else{
-        e.target.name="menu";
-        resnavbar.style="margin-top:-350px";
-    }
-});
-mode.addEventListener("click",(e)=>{
-    e.preventDefault();
-   // console.log(e.target.name);
-    if(e.target.name=="sunny"){
-        e.target.name="moon";
-      //  e.target.body.style="background-color:white";
-        mainscreen.className="light";
-        navlogo.innerHTML="<img src='/assets/images/Logo.png' alt=''>";
-    }
-    else{
-        e.target.name="sunny";
-        mainscreen.className="dark";
-        navlogo.innerHTML="<img src='/assets/images/Logo_white.png' alt=''>";
-    }
-});
-
 document.addEventListener("scroll",(e)=>{
     e.preventDefault();
     console.log("Scrolled....");

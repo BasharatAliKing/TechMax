@@ -25,8 +25,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Rubik+Burned&family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
+ <!--JQuery link-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
-
 <body>
   <section id="screen" class="dark">
     <!--Navbar starts here-->
@@ -49,14 +50,14 @@
         </ul>
         <div class="ml-auto flex items-center gap-5 text-xl">
           <ion-icon id="search" class="" name="search"></ion-icon>
-          <ion-icon id="mode" class="" name="sunny"></ion-icon>
-          <ion-icon name="menu" class="text-3xl  lg:hidden" id="menu-navbar"></ion-icon>
+          <i id="mode" class="fa-solid fa-sun"></i>
+          <i id="menu-navbar" class="fa-solid fa-bars text-2xl lg:hidden"></i>
         </div>
       </div>
     </nav>
     <!--Responcive menu navbar-->
-    <ul id="res-navbar"
-      class="fixed z-10 mt-[-350px] bg-green duration-500  w-full  flex flex-col gap-4 items-center py-5">
+    <ul id="res-navbar" style="display: none;"
+      class="fixed z-10  bg-green mt-[57px] w-full flex flex-col gap-4 items-center py-5">
       <li class="flex gap-[2px]  items-center text-base font-medium text-white cursor-pointer active"><a
           href="/index.html">Home</a></li>
       <li class="flex gap-[2px] nav items-center text-base font-medium text-white cursor-pointer"><a
@@ -448,7 +449,7 @@
       </div>
     </section>
     <!--Plans section starts from here-->
-    <section id="plans" class="py-10 container flex flex-col gap-10">
+    <!-- <section id="plans" class="py-10 container flex flex-col gap-10">
       <div class="flex flex-col md:flex-row gap-5">
         <div class="md:w-1/2 flex flex-col gap-3">
           <h2 class="uppercase flex text-base md:text-lg items-center gap-2 text-green font-medium"> <span
@@ -533,7 +534,7 @@
         </div>
 
       </div>
-    </section>
+    </section> -->
     <!--Customers testimonials-->
     <section id="customers" class=" bg-customersbg bg-fixed bg-no-repeat bg-center">
       <div class="bg-[#00000087]">
