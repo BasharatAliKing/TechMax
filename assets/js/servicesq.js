@@ -5,7 +5,7 @@ $(document).ready(function(){
         $(".para-1").slideToggle("slow");
         $("#icon-plusone").toggleClass('fa-plus fa-minus');
         // $('#icon-plustwo').removeClass().addClass('fa-solid fa-plus ml-auto font-bold');
-        $('#para-2').hide("slow");
+        // $('#para-2').empty();
     });
     // Question 2
     $("#question-2").click(function(){
