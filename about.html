@@ -25,20 +25,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Rubik+Burned&family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
-    <!--JQuery link-->
+     <!--JQuery link-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-</head>
+  </head>
 <body>
-  <section id="screen" class="dark">
+    <section id="screen" class="dark">
     <!--Navbar starts here-->
     <nav id="navbar" class="text-white bg-green md:bg-transparent py-3 fixed z-50 w-full">
       <div class="container flex items-center">
         <div id="nav-logo" class="hidden md:flex w-[35%] lg:w-[15%]"><img src="/assets/images/Logo_white.png"  alt=""></div>
         <div id="nav-logo" class=" md:hidden w-[35%] lg:w-[15%]"><img src="/assets/images/Logo_Dark_Blue.png"  alt=""></div>
         <ul class="hidden lg:flex gap-7 mx-auto ">
-          <li class="flex gap-[2px]  items-center text-base font-medium  cursor-pointer active"><a href="/index.html">Home</a>
+          <li class="flex gap-[2px]  items-center text-base font-medium  cursor-pointer"><a href="/index.html">Home</a>
           </li>
-          <li class="flex gap-[2px] nav items-center text-base font-medium  cursor-pointer"><a href="/about.html">About</a>
+          <li class="flex gap-[2px] nav items-center text-base font-medium  cursor-pointer active"><a href="/about.html">About</a>
           </li>
           <li class="flex gap-[2px] nav items-center text-base font-medium  cursor-pointer"><a href="/services.html">Services</a>
           </li>
@@ -49,7 +49,7 @@
           </li>
         </ul>
         <div class="ml-auto flex items-center gap-5 text-xl">
-          <ion-icon id="search" class="" name="search"></ion-icon>
+          <i id="search" class="fa-solid fa-magnifying-glass text-xl"></i>
           <i id="mode" class="fa-solid fa-sun"></i>
           <i id="menu-navbar" class="fa-solid fa-bars text-2xl lg:hidden"></i>
         </div>
@@ -58,6 +58,22 @@
     <!--Responcive menu navbar-->
     <ul id="res-navbar" style="display: none;"
       class="fixed z-10  bg-green mt-[57px] w-full flex flex-col gap-4 items-center py-5">
+      <li class="flex gap-[2px]  items-center text-base font-medium text-white cursor-pointer active"><a
+          href="/index.html">Home</a></li>
+      <li class="flex gap-[2px] nav items-center text-base font-medium text-white cursor-pointer"><a
+          href="/about.html">About</a></li>
+      <li class="flex gap-[2px] nav items-center text-base font-medium text-white cursor-pointer"><a
+          href="/services.html">Services</a></li>
+      <li class="flex gap-[2px] nav items-center text-base font-medium text-white cursor-pointer"><a
+          href="/portfolio.html">Portfolio</a></li>
+      <li class="flex gap-[2px] nav items-center text-base font-medium text-white cursor-pointer"><a
+          href="/blog.html">Blog</a></li>
+      <li class="flex gap-[2px] nav items-center text-base font-medium text-white cursor-pointer"><a
+          href="/contacts.html">Contact</a></li>
+    </ul>
+    <!--Responcive menu navbar-->
+    <ul id="res-navbar"
+      class="fixed z-10 mt-[-350px] bg-green duration-500  w-full  flex flex-col gap-4 items-center py-5">
       <li class="flex gap-[2px]  items-center text-base font-medium text-white cursor-pointer active"><a
           href="/index.html">Home</a></li>
       <li class="flex gap-[2px] nav items-center text-base font-medium text-white cursor-pointer"><a
@@ -85,8 +101,8 @@
     <!--Abouts us starts from here-->
     <section id="about" class="container py-10">
       <div class="flex flex-col md:flex-row gap-5">
-        <div class="md:hidden flex items-center lg:items-end lg:justify-end "><img src="/assets/images/about.png"
-            data-tilt alt=""></div>
+        <!-- <div class="md:hidden flex items-center lg:items-end lg:justify-end "><img src="/assets/images/about.png"
+            data-tilt alt=""></div> -->
         <div class="md:w-1/2 flex flex-col gap-10">
           <div class="flex flex-col gap-3">
             <h4 class="uppercase flex text-base md:text-lg items-center gap-2 text-green font-medium"> <span
@@ -149,7 +165,7 @@
             </div>
           </div>
         </div>
-        <div class="md:w-1/2 hidden md:flex items-center lg:items-end lg:justify-end "><img
+        <div class="md:w-1/2 flex items-center lg:items-end lg:justify-end "><img
             src="/assets/images/about.png" data-tilt alt=""></div>
       </div>
     </section>

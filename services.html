@@ -40,11 +40,11 @@
         <div id="nav-logo" class="hidden md:flex w-[35%] lg:w-[15%]"><img src="/assets/images/Logo_white.png"  alt=""></div>
         <div id="nav-logo" class=" md:hidden w-[35%] lg:w-[15%]"><img src="/assets/images/Logo_Dark_Blue.png"  alt=""></div>
         <ul class="hidden lg:flex gap-7 mx-auto ">
-          <li class="flex gap-[2px]  items-center text-base font-medium  cursor-pointer active"><a href="/index.html">Home</a>
+          <li class="flex gap-[2px]  items-center text-base font-medium  cursor-pointer"><a href="/index.html">Home</a>
           </li>
           <li class="flex gap-[2px] nav items-center text-base font-medium  cursor-pointer"><a href="/about.html">About</a>
           </li>
-          <li class="flex gap-[2px] nav items-center text-base font-medium  cursor-pointer"><a href="/services.html">Services</a>
+          <li class="flex gap-[2px] nav items-center text-base font-medium  cursor-pointer active"><a href="/services.html">Services</a>
           </li>
           <li class="flex gap-[2px] nav items-center text-base font-medium  cursor-pointer"><a href="/portfolio.html">Portfolio</a></li>
           <li class="flex gap-[2px] nav items-center text-base font-medium  cursor-pointer"><a href="/blog.html">Blog</a>
@@ -53,7 +53,7 @@
           </li>
         </ul>
         <div class="ml-auto flex items-center gap-5 text-xl">
-          <ion-icon id="search" class="" name="search"></ion-icon>
+          <i id="search" class="fa-solid fa-magnifying-glass text-xl"></i>
           <i id="mode" class="fa-solid fa-sun"></i>
           <i id="menu-navbar" class="fa-solid fa-bars text-2xl lg:hidden"></i>
         </div>
@@ -232,54 +232,58 @@
        
       </div>
       <!--Questions starts here-->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-        <div class="border w-full border-green p-3 mb-auto">
-          <div id="question-1" class="flex items-center text-green">
-            <h4 class="text-base md:text-lg font-semibold text-green capitalize">Are your services easy to use ?</h4>
-            <i id="icon-plusone" class="fa-solid fa-plus ml-auto font-bold"></i>
+      <div class="flex flex-col md:flex-row gap-5">
+        <div class="md:w-1/2 flex flex-col gap-5 mb-auto">
+          <div class="border w-full border-green p-3 mb-auto">
+            <div id="question-1" class="flex items-center text-green">
+              <h4 class="text-base md:text-lg font-semibold text-green capitalize">Are your services easy to use ?</h4>
+              <i id="icon-plusone" class="fa-solid fa-plus ml-auto font-bold"></i>
+            </div>
+            <p class="para-1 text-sm md:text-base hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet aperiam quisquam recusandae ipsa quibusdam et
+              necessitatibus iure excepturi molestiae veritatis.</p>
           </div>
-          <p class="para-1 text-sm md:text-base hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet aperiam quisquam recusandae ipsa quibusdam et
-            necessitatibus iure excepturi molestiae veritatis.</p>
+          <div id="question-2" class="border w-full border-green p-3 mb-auto">
+            <div class="flex items-center text-green">
+              <h4 class="text-base md:text-lg font-semibold text-green capitalize">How much i will pay ?</h4>
+              <i id="icon-plustwo" class="fa-solid fa-plus ml-auto font-bold"></i>
+            </div>
+            <p class="para-2 text-sm md:text-base hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet aperiam quisquam recusandae ipsa quibusdam et
+              necessitatibus iure excepturi molestiae veritatis.</p>
+          </div>
+          <div class="border w-full border-green p-3 mb-auto">
+            <div id="question-3" class="flex items-center text-green">
+              <h4 class="text-base md:text-lg font-semibold text-green">Are your services easy to use ?</h4>
+              <i id="icon-plusthree" class="fa-solid fa-plus ml-auto font-bold"></i>
+            </div>
+            <p class="para-3 text-sm md:text-base hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet aperiam quisquam recusandae ipsa quibusdam et
+              necessitatibus iure excepturi molestiae veritatis.</p>
+          </div>
         </div>
-        <div id="question-2" class="border w-full border-green p-3 mb-auto">
-          <div class="flex items-center text-green">
-            <h4 class="text-base md:text-lg font-semibold text-green capitalize">How much i will pay ?</h4>
-            <i id="icon-plustwo" class="fa-solid fa-plus ml-auto font-bold"></i>
+        <div class="md:w-1/2 flex flex-col gap-5 mb-auto">
+          <div class="border w-full border-green p-3 mb-auto">
+            <div id="question-4" class="flex items-center text-green">
+              <h4 class="text-base md:text-lg font-semibold text-green">Are your services easy to use ?</h4>
+              <i id="icon-plusfour" class="fa-solid fa-plus ml-auto font-bold"></i>
+            </div>
+            <p class="para-4 text-sm md:text-base hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet aperiam quisquam recusandae ipsa quibusdam et
+              necessitatibus iure excepturi molestiae veritatis.</p>
           </div>
-          <p class="para-2 text-sm md:text-base hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet aperiam quisquam recusandae ipsa quibusdam et
-            necessitatibus iure excepturi molestiae veritatis.</p>
-        </div>
-        <div class="border w-full border-green p-3 mb-auto">
-          <div id="question-3" class="flex items-center text-green">
-            <h4 class="text-base md:text-lg font-semibold text-green">Are your services easy to use ?</h4>
-            <i id="icon-plusthree" class="fa-solid fa-plus ml-auto font-bold"></i>
+          <div class="border w-full border-green p-3 mb-auto">
+            <div  id="question-5" class="flex items-center text-green">
+              <h4 class="text-base md:text-lg font-semibold text-green">Are your services easy to use ?</h4>
+              <i id="icon-plusfive" class="fa-solid fa-plus ml-auto font-bold"></i>
+            </div>
+            <p class="para-5 text-sm md:text-base hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet aperiam quisquam recusandae ipsa quibusdam et
+              necessitatibus iure excepturi molestiae veritatis.</p>
           </div>
-          <p class="para-3 text-sm md:text-base hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet aperiam quisquam recusandae ipsa quibusdam et
-            necessitatibus iure excepturi molestiae veritatis.</p>
-        </div>
-        <div class="border w-full border-green p-3 mb-auto">
-          <div id="question-4" class="flex items-center text-green">
-            <h4 class="text-base md:text-lg font-semibold text-green">Are your services easy to use ?</h4>
-            <i id="icon-plusfour" class="fa-solid fa-plus ml-auto font-bold"></i>
+          <div class="border w-full border-green p-3 mb-auto">
+            <div id="question-6" class="flex items-center text-green">
+              <h4 class="text-base md:text-lg font-semibold text-green">Are your services easy to use ?</h4>
+              <i id="icon-plussix" class="fa-solid fa-plus ml-auto font-bold"></i>
+            </div>
+            <p class="para-6 text-sm md:text-base hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet aperiam quisquam recusandae ipsa quibusdam et
+              necessitatibus iure excepturi molestiae veritatis.</p>
           </div>
-          <p class="para-4 text-sm md:text-base hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet aperiam quisquam recusandae ipsa quibusdam et
-            necessitatibus iure excepturi molestiae veritatis.</p>
-        </div>
-        <div class="border w-full border-green p-3 mb-auto">
-          <div  id="question-5" class="flex items-center text-green">
-            <h4 class="text-base md:text-lg font-semibold text-green">Are your services easy to use ?</h4>
-            <i id="icon-plusfive" class="fa-solid fa-plus ml-auto font-bold"></i>
-          </div>
-          <p class="para-5 text-sm md:text-base hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet aperiam quisquam recusandae ipsa quibusdam et
-            necessitatibus iure excepturi molestiae veritatis.</p>
-        </div>
-        <div class="border w-full border-green p-3 mb-auto">
-          <div id="question-6" class="flex items-center text-green">
-            <h4 class="text-base md:text-lg font-semibold text-green">Are your services easy to use ?</h4>
-            <i id="icon-plussix" class="fa-solid fa-plus ml-auto font-bold"></i>
-          </div>
-          <p class="para-6 text-sm md:text-base hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet aperiam quisquam recusandae ipsa quibusdam et
-            necessitatibus iure excepturi molestiae veritatis.</p>
         </div>
 
       </div>
