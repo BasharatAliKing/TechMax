@@ -7,6 +7,12 @@ $(document).ready(function(){
         $(this).toggleClass('fa-moon fa-sun');
         $('#screen').toggleClass('light dark')
     });
+    $('#search').click(function(){
+        $(".search-menu").fadeIn("slow");
+    });
+    $('#seach-menuclose').click(function() {
+        $('.search-menu').hide();
+      })
  });
 const mode=document.getElementById("mode");
 const navbar=document.getElementById("navbar");
