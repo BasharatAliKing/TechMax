@@ -25,7 +25,10 @@
        #choose-us h3{
         color:var(--white--);
        }
-     
+       .services-popup{
+        background-color: white;
+        color: black;
+      }
 
        @media(max-width:992px){
         #about .signature{
@@ -67,7 +70,10 @@
        #choose-us h3{
         color: black;
        }
-      
+      .services-popup{
+        background-color: #040922;
+        color: white;
+      }
        @media(max-width:992px){
         #about .signature{
             max-width: 120px;

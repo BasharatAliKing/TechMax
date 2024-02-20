@@ -1,5 +1,12 @@
 
 $(document).ready(function(){
+    $('#readmore-ser').hide()
+    $('#readmore-btnser').click(function(){
+        $('#readmore-ser').fadeIn("slow");
+      });
+      $('#close-ser').click(function () {
+        $('#readmore-ser').hide("slow");
+        })
     // Question 1
     $("#question-1").click(function(){
         $(".para-1").slideToggle("slow");
